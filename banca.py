@@ -6,7 +6,7 @@ def menu():
     ================== MENU =================
 
     [d]\tDeposito
-    [l]\tSaque
+    [l]\tLevantar
     [c]\tNovo Cliente
     [nc]\tNova Conta
     [lc]\tListar Contas
@@ -45,10 +45,10 @@ def saque(saldo, valor, extrato, limite, num_saques, limite_saque):
         saldo -= valor
         extrato += f'\n levantamento:\t AOA {valor:.2f}\n'
         num_saques += 1
-        print('\n=== Levantamento realizado com sucesso. @@@')
+        print('\n@@@ Levantamento realizado com sucesso. @@@')
 
     else:
-        print('@@@ Operacao falhou. Valor invalido')
+        print('@@@ Operacao falhou. Valor invalido. @@@')
 
     return saldo, extrato
 
